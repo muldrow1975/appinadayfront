@@ -15,9 +15,11 @@
         <div class="header-wrapper">Escape From Bottega</div>
     
             <div class="login">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
-                <button type="submit">Login</button> 
+                <label for="username"><b>Username</b></label>
+                <form action="submit" class="submit">
+                    <input type="text" placeholder="Enter Username" name="username" required>
+                    <button type="submit">Login</button> 
+                </form>
                
             </div>
 
@@ -60,4 +62,23 @@
        <div class="footer-wrapper">Developed by Bottega Full Stack Developer April '22 Class</div>
     </div>
 </body>
+<script>
+    const loginBtn = document.getElementsByClassName('submit')
+    const userName = document.getElementsByTagName('input').value
+
+    loginBtn.onClick = () => {
+        fetch(`http://127.0.0.1:5000/login/${userName}`)
+    }
+
+    // loginBtn.onClick = () => {
+    //     fetch(`http://127.0.0.1:5000/login/${userName}`, {
+    //         method: "GET"
+    //     }),
+    //     .then((Response) => Response.json())
+    //     .then((data) => {
+    //         console.log(data);
+    //     })
+    //     .catch((error) =>console.log("error logging in", error))
+    // }
+</script>
 </html>
