@@ -1,5 +1,10 @@
 .page-container {
-    background: linear-gradient(#C20A0A, #2F22C4);
+    background: linear-gradient(#C20A0A, #530202, #08024C, #3425D8);
+    color:rgba(245, 245, 245, 0.864)
 }
 
+.page-container > .choice-btns-btn-grid > .btn {
+    background-color: #6FDFF0;
+    color: #000000;
 
+}
