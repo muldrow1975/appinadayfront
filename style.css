@@ -23,17 +23,20 @@
 .page-container > .window {
     display: flex;
     justify-content: center;
+    justify-items: center;
     background-color: #6FDFF0;
     border-color: #000000;
-
+    border-radius: 9px;
+    width: 45%;
 }
 
 .page-container > .window > .description {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:larger;
-    font-weight:normal
+    font-size:medium;
+    font-weight:normal;
+    color:#000000
 }
 
 .page-container > .choice-btns-btn-grid{
