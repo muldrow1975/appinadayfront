@@ -67,13 +67,18 @@
     const userName = document.getElementsByTagName('input').value
 
     loginBtn.onClick = () => {
-        fetch(`http://127.0.0.1:5000/login/${userName}`,
-        method = "GET"
-    )},
-    .then((Response) => Response.json())
+        fetch(`http://127.0.0.1:5000/login/${userName}`, {
+        method: "GET",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+            user: userName.value,
+        }),
+    })
+    .then((response) => response.json())
     .then((data) => {
-        console.log(data)
+        console.log(data);
     })
     .catch((error) => console.log("error logging in", error));
+}
 </script>
 </html>
