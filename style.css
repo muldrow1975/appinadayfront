@@ -3,7 +3,6 @@
     width: 100vw;
     background: linear-gradient(#C20A0A, #530202, #08024C, #3425D8);
     color:rgba(245, 245, 245, 0.864)
-
 }
 
 .page-container > .header-wrapper {
@@ -26,6 +25,8 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+    width: 80vw;
+    height: 80vh;
     
 }
 
